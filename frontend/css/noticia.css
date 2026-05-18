@@ -99,7 +99,7 @@ header h1{
     justify-content: center;
 }
 .lightbox-img {
-    max-width: 80%;
+    max-width: 30%;
     max-height: 80%;
     border-radius: 10px;
 }

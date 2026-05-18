@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ico/icone.ico">
+    <link rel="stylesheet" href="../css/noticia.css">
+    <script src="../js/noticia.js"></script>
+    <title>Notícia</title>
+</head>
+<body class="claro" onload="exibir_noticias()">
+   
+    <header>
+        <button onclick="alterar_tema()">Tema</button>
+        <img src="../img/noticias.png" alt="Noticias">
+        <h1>Notícias web</h1>
+    </header>
+        <nav></nav>
+        <main>
+            <section class="noticias" id="noticias">
+            </section>
+            <div id="lightbox" class="lightbox" onclick="fechar_lightbox()">
+                <span class="fechar">&times;</span>
+                <img class="lightbox-img" id="lightbox-img" src="" >
+            </div>
+        </main>
+        <footer></footer>
+</body>
+</html>
