@@ -1,0 +1,30 @@
+import  mysql from 'mysql2/promise.js';
+
+async function conectar (){
+    const conexao = await mysql.createConnection({
+        host:'127.0.0.1',
+        port:3306,
+        user:'root',
+        password:'',
+        database:'noticiario'
+
+    });
+    return conexao;
+}
+
+async function executarQuery(query, params=[]){
+    const conexao = await conectar();
+    try{
+        const resultado = await conexao.execute(query, params);
+        return resultado;
+    }
+    catch(erro){
+        console.log(`Erro ao Executar Query:$(erro)`);
+    }
+    finally{
+        await conexao.end();
+    }
+
+}
+
+export default executarQuery;
