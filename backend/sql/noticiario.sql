@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS noticiario;
 
 CREATE DATABASE IF NOT EXISTS noticiario;
 USE noticiario;
-CREATE TABLE noticiario (
+CREATE TABLE noticias (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR (250) NOT NULL,
     conteudo TEXT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE noticiario (
     link VARCHAR(250)
 );
 
-INSERT INTO noticiario (
+INSERT INTO noticias (
     titulo,
     conteudo,
     caminhoImagem,
@@ -28,4 +28,4 @@ SELECT
     caminhoImagem,
     link 
 FROM
-    noticiario;
+    noticias;
