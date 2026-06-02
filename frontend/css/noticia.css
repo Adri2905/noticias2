@@ -67,6 +67,37 @@ header h1{
     font-size: 8vw;
     color: var(--text-color);
 }
+nav {
+    margin: 15px 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.menu li a:active {
+    background-color: var(--tertiary-color);
+}
 .noticias {
     margin: 15px 10px;
     display: flex;

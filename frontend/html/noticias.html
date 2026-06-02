@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ico/icone.ico">
     <link rel="stylesheet" href="../css/noticia.css">
-    <script src="../js/noticia.js"></script>
+    <script src="../js/noticias.js"></script>
     <title>Notícia</title>
 </head>
 <body class="claro" onload="exibir_noticias()">
@@ -13,9 +13,18 @@
     <header>
         <button onclick="alterar_tema()">Tema</button>
         <img src="../img/noticias.png" alt="Noticias">
-        <h1>Notícias web</h1>
+        <h1 onclick="mudar_titulo(this)">Notícias web</h1>
     </header>
-        <nav></nav>
+    <nav>
+    <ul class="menu">
+        <li>
+            <a href="noticias.html">📰 Notícias</a>
+        </li>
+        <li>
+            <a href="formulario.html">➕ Cadastrar Notícia</a>
+        </li>
+    </ul>
+</nav>
         <main>
             <section class="noticias" id="noticias">
             </section>

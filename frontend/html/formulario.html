@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ico/icone.ico">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="../js/formulario.js"></script>
+    <title>Cadastrar Notícias</title>
+</head>
+
+<body class="claro">
+
+    <header>
+        <button class="botao_tema" onclick="alterar_tema()">Tema</button>
+        <img src="../img/noticias.png" alt="Notícias">
+        <h1>Cadastro de Notícias</h1>
+    </header>
+
+<nav>
+    <ul class="menu">
+        <li>
+            <a href="noticias.html">📰 Notícias</a>
+        </li>
+        <li>
+            <a href="formulario.html">➕ Cadastrar Notícia</a>
+        </li>
+    </ul>
+</nav>
+
+    <main>
+        <section class="formulario">
+
+            <h2>Nova Notícia</h2>
+
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo">
+
+            <label for="conteudo">Conteúdo</label>
+            <textarea id="conteudo" rows="6"></textarea>
+
+            <label for="imagem">Caminho da Imagem</label>
+            <input type="text" id="imagem">
+
+            <label for="link">Link da Notícia</label>
+            <input type="text" id="link">
+
+            <button onclick="cadastrar_noticia()">
+                Cadastrar Notícia
+            </button>
+
+            <p id="mensagem"></p>
+
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
