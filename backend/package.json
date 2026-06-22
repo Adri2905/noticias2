@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "condicional.js",
   "scripts": {
-    "start": "node ./js/server.js"
+    "start": "node  --watch ./js/server.js"
   },
   "keywords": [],
   "author": "",
