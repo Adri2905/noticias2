@@ -23,7 +23,7 @@ async function cadastrar_noticia() {
     try {
 
         const resposta = await fetch(
-            "http://127.0.0.1:3000/noticias",
+            "http://noticias-backend-adrieleleticia-3000.up.railway.appp://127.0.0.1:3000/noticias",
             {
                 method: "POST",
                 headers: {
