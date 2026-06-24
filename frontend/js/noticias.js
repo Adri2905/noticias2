@@ -32,7 +32,7 @@ async function exibir_noticias(){
     section.innerHTML = "<h2>Aguarde, carregado documento...</h2>"
 try{
 
-        const resposta = await fetch('http://noticias-backend-adrieleleticia-3000.up.railway.appp://127.0.0.1:3000/noticias');
+        const resposta = await fetch('https://noticias-backend-adrieleleticia.up.railway.app/noticias');
         var noticias = await resposta.json();
         
         var html = "";
