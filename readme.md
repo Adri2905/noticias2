@@ -1,0 +1,1 @@
+ "start": "node --env-file=prd.env --watch ./js/server.js"
